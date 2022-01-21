@@ -15,12 +15,12 @@ resource "aws_instance" "example" {
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/script.sh",
-      "sudo sed -i -e 's/\r$//' /tmp/script.sh",
+      "sudo sed -i -e 's/\r$//' /tmp/script.sh", # removing spl chars
       "sudo /tmp/script.sh",
     ]
   }
   connection {
-    host        = coalesce(self.public_ip, self.private_ip)
+    host        = coalesce(self.public_ip, self.private_ip) # coalesce example https://www.terraform.io/language/functions/coalesce
     type        = "ssh"
     user        = var.INSTANCE_USERNAME
     private_key = file(var.PATH_TO_PRIVATE_KEY)
