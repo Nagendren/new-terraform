@@ -1,10 +1,10 @@
 This demo helps you to understand the remote state concept in terraform, First lets understand what are state files.
 
-	Terraform maintains remote state of the infrastructure and it stores it in a file called terraform.tfstate
+	Terraform maintains remote state of the infrastructure and it stores it in a file called **terraform.tfstate**
 
-	There is also a backup file for the previous version called terraform.tfstate.backup
+	There is also a backup file for the previous version called **terraform.tfstate.backup**
 
-	When we run "terraform apply" new terraform.tfstate and terraform.tfstate.backup file is written everytime.
+	When we run **"terraform apply"** new terraform.tfstate and terraform.tfstate.backup file is written everytime.
 
 	This helps terraform to keep track of the remote state.
 
@@ -17,15 +17,15 @@ We can maintain terraform state files in remote repositories like git, s3 for co
 
 	unfortunately, we get confilts in git when two people work at sametime.
 
-To overcome this, we have "backend" functionality in terraform.
+To overcome this, we have **"backend"** functionality in terraform.
 
 	Default backend is our "local"(which everyone using it now)
 
 	other backends:
 
-		S3 with dynamoDB locking mechanism
+		**S3** with dynamoDB locking mechanism
 
-		consul with locking
+		**consul** with locking
 
-		terraform enterprise(commercial soultion)
+		**terraform enterprise**(commercial soultion)
 	
