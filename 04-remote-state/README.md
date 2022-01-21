@@ -28,4 +28,5 @@ To overcome this, we have **"backend"** functionality in terraform.
 		**consul** with locking
 
 		**terraform enterprise**(commercial soultion)
-	
+
+NOTE: before using backend, S3 bucket need to be created and connection need be established between your local and aws (use aws configure)
