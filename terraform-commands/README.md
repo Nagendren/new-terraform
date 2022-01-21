@@ -22,3 +22,5 @@ terraform refresh  - will check for diff between remote state and local state
 
 terraform fmt      - will do the standard formating
 
+terraform get      - used to download the modules
+
