@@ -5,12 +5,16 @@ Note: create sshkey before running this code. eg: ssh-keygen -f mykey
 
 after creating ebs volume, we need to format and mount the new volume before use
 
-manual method for mounting volume, After ssh into new servers,
+manual method for mounting volume, After ssh into new servers use below commands,
 
 #mkfs.ext4 /dev/xvdh
+
 #mkdir /data
+
 #mount /dev/xvdh /data
+
 #df -h -> we can see the new voume
+
 #unmount /data -> to unmount the volume
 
 For permanent mount, add a entry to fstab
