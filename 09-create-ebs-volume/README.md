@@ -16,5 +16,7 @@ manual method for mounting volume, After ssh into new servers,
 For permanent mount, add a entry to fstab
 
 #vi /etc/fstab
-#/dev/xvdh /data ext4 defaults 0 0
+
+/dev/xvdh /data ext4 defaults 0 0
+
 #mount /data
