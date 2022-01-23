@@ -15,9 +15,7 @@ NOTE: Never commit your ssh keys or aws secrets to git repo.
 > You need to rotate the keys or create new users for future use. 
 > Thanks to AWS for this detailed monitoring
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
+
 
 ## Prerequisite
 - Install terraform
