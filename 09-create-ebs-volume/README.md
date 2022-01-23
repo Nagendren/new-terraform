@@ -1,7 +1,11 @@
 This demo helps you to understand the creation of VPC, internet gateway, EC2, securty grp, EBS volume using terraform
 
 
-Note: create sshkey before running this code. eg: ssh-keygen -f mykey
+Note: 
+
+    1) create sshkey before running this code. eg: ssh-keygen -f mykey
+    2) whitelist your ip in security-group.tf
+
 
 after creating ebs volume, we need to format and mount the new volume before use
 
