@@ -13,7 +13,7 @@ resource "aws_security_group" "allow-ssh" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["49.205.82.0/32"]
+    cidr_blocks = ["x.x.x.x/32"] # add your ip address
   }
   tags = {
     Name = "Demo-sg"
