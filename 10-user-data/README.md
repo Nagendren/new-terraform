@@ -10,7 +10,7 @@ there are two types of user data:
 
 in this demo, We have used cloud-init
 
-If we are not setting skip_destroy = true during volume creation, we will face below error while destroying.
+If we are not setting skip_destroy = true during volume creation, we will face below error while destroying.(chk instance.tf)
 
 	Error: error detaching EC2 Internet Gateway (igw-XXXXXXXXXXXXXXX) from VPC (vpc-XXXXXXXXXXXXXXXXXXXXXXX): DependencyViolation: Network vpc-XXXXXXXXXXXXXX has some mapped public address(es). Please unmap those public address(es) before detaching the gateway.
 
