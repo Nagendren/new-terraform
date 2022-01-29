@@ -25,6 +25,5 @@ variable "AMIS" {
   }
 }
 variable "RDS_PASSWORD" {
-  default = "Random@123"
 }
 
