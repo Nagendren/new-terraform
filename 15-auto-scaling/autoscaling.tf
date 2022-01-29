@@ -4,8 +4,8 @@ resource "aws_launch_configuration" "example-launchconfig" {
   name_prefix     = "example-launchconfig"
   image_id        = var.AMIS[var.AWS_REGION]
   instance_type   = "t2.micro"
-  key_name        = aws_key_pair.mykeypair.key_name
-  security_groups = [aws_security_group.allow-ssh.id]
+  key_name        = aws_key_pair.mykeypair.key_name     #keys to access ec2 instance
+  security_groups = [aws_security_group.allow-ssh.id]   #SG - where instance will be launched
 }
 
 #create auto scaling group
