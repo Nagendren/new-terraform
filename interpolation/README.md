@@ -2,8 +2,8 @@
 In terraform, we can interpolate other values using ${...}
 
 example:
-- variable = ${var.VARIABLE_NAME}
-- Resources = ${aws_instance.name.id}
+- variable    = ${var.VARIABLE_NAME}
+- Resources   = ${aws_instance.name.id}
 - Data Source = ${data.template_file.name.rendered}
 
 
