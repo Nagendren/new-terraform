@@ -9,28 +9,22 @@ example:
 
 ## Interpolation with Data Types
 
-```sh
+```python
 Datatype: STRING
-
 Syntax: var.name
-
 Example: ${var.VARIABLE_NAME}
 ```
 
-```sh
+```python
 Datatype: LIST
-
 Syntax: var.LIST or var.LIST[0]
-
 Example: 1) ${var.subnets[0]} 
          2) ${join(",",var.subnets)} # values in the list will be created as one variable with comman seperated.
 ```
 
-```sh
+```python
 Datatype: MAP
-
 Syntax: var.MAP["key"]
-
 Example: We can use any of the below methods to invoke map varibale
          1) ${var.AMIS[var.AWS_REGION]}
          2) ${lookup(var.AMIS,var.AWS_REGION)}
@@ -38,49 +32,39 @@ Example: We can use any of the below methods to invoke map varibale
 
 ## Interpolation with other types
 
-```sh
+```python
 Datatype: output of a module
-
 Syntax: module.name.output
-
 Example: ${module.aws_vpc.vpcid}
 ```
 
-```sh
+```python
 Datatype: COUNT Information
-
 Syntax: count.FIELD
-
 Example: ${count.index} # will give you the count
 ```
-```sh
+```python
 Datatype: PATH Information
-
 Syntax: path.Type
-
 Example: 1) path.cwd #current working dir
 	     2) path.module #module path
 	     3) path.root   #root module path
 ```
-```sh
+```python
 Datatype: META Information
-
 Syntax: terraform.FIELD
-
 Example: terraform.env #shows active workspace
 ```
 ## Interpolation with  MATH
-```sh
+```python
 Datatype: float types
-
 Example: + = ADD
          - = SUBTRACT
          * = MULTIPLY
          / = DIVIDE
 ```
-```sh
+```python
 Datatype: integer types
-
 Example: + = ADD
          - = SUBTRACT
          * = MULTIPLY
