@@ -25,7 +25,7 @@ Example: 1) ${var.subnets[0]}
 ```sh
 Datatype: MAP
 Syntax: var.MAP["key"]
-Example: We can use any method to invoke map varibale
+Example: We can use any of the below methods to invoke map varibale
          1) ${var.AMIS[var.AWS_REGION]}
          2) ${lookup(var.AMIS,var.AWS_REGION)}
 ```
