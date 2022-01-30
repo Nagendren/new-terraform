@@ -1,10 +1,10 @@
-##for loops
+# for loops
 
 The for-loop features can help us to loop over variables, transform it and output it in different formats.
 
-for-loops are typically used when assigning a value to an argument
+for-loops are typically used when _assigning a value to an argument_
 
-##example: 
+# example: 
 
 This example based on the vars.tf file in this folder.
 
