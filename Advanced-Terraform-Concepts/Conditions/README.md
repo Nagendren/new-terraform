@@ -21,7 +21,7 @@ resource "aws_instance" "myinstance" {
 ```
 
 ## Operators
-```
+```python
 Equal               : ==
 Not Equal           : !=
 
