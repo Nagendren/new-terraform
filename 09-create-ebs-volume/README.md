@@ -4,6 +4,7 @@ In this demo we create,
 - EBS volume
 - VPC
 - Subnets
+- Key Pairs
 - Internet gateway
 - EC2
 - Security Group
