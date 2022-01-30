@@ -6,7 +6,7 @@ Example: ${file("mykey.pub")} - will the read the content of the public key file
 ```
 
 ## Built-In-Functions with example
-```sh
+```python
 Function: basename(path)
 Description: Returns the filename of the path (last element)
 Example: basename("/home/ubuntu/file.txt") - returns file.txt
@@ -15,4 +15,9 @@ Example: basename("/home/ubuntu/file.txt") - returns file.txt
 Function: coalesce(string1, string2, ..) and coalescelist(list1, list2,..)
 Description: Returns the first non-empty value or list1
 Example: coalesce("", "", "hello") - returns hello
+```
+```python
+Function: element(list, index)
+Description: Returns single element from a list at the given index
+Example: element(module.vpc.public_subnets, count.index)
 ```
