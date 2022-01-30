@@ -16,11 +16,11 @@ Example:
 - To overcome this, we have **"backend"** functionality in terraform.
 - Default backend is our "local"(which everyone using it)
 - other backends:
+```python
+**S3** with dynamoDB locking mechanism
+**consul** with locking
+**terraform enterprise**(commercial soultion)
+```
 
-		**S3** with dynamoDB locking mechanism
-
-		**consul** with locking
-
-		**terraform enterprise**(commercial soultion)
-
-NOTE: before using backend, S3 bucket need to be created and connection need be established between your local and aws (use aws configure)
+# NOTE: 
+Before using backend, S3 bucket need to be created and connection need be established between your local and aws (use aws configure)
