@@ -1,1 +1,5 @@
-This demo helps to understand output attributes like how it can be used for future use
+# output attributes
+
+This demo helps to understand output attributes. 
+
+- output attributes are very helpful to print the resources values
