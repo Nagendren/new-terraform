@@ -11,6 +11,7 @@ example:
 
 ```sh
 Datatype: STRING
+
 Syntax: var.name
 Example: ${var.VARIABLE_NAME}
 ```
