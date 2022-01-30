@@ -5,7 +5,8 @@ In this demo, we can see how user data works and how cloud-init used with user d
 # USER DATA 
 -  Is only executed at the creation of the instance, not when the instance reboots.
 
-we will create ec2 instance and ebs volume. we can format the volume and install few software using user data. 
+In this example, we will create ec2 instance and ebs volume. we can format the volume and install few software using user data. 
+
 _There are two types of user data:_
 - shell scripts
 - cloud-init
