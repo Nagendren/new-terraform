@@ -1,5 +1,11 @@
-This demo helps you to understand the creation of VPC, internet gateway, EC2 using terraform
+# create EC2 instance
 
-In this code, we create VPC, subnets(private and public), keypairs, security group and instance in public subnet
+In this demo we create,
+- EC2
+- VPC
+- subnets
+- Internet gateway
+- key pairs (for ssh)
 
-Note: create sshkey before running this code. eg: ssh-keygen -f mykey
+# Note: 
+- create sshkeys before running this code. Example: ssh-keygen -f mykey
