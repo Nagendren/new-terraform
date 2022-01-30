@@ -1,17 +1,22 @@
+# User Data
+
 In this demo, we can see how user data works and how cloud-init used with user data.
 
-	USER DATA -  is only executed at the creation of the instance, not when the instance reboots.
+#USER DATA 
+-  Is only executed at the creation of the instance, not when the instance reboots.
 
-In this code , we will create ec2 instance and ebs volume. we can format the volume and install few software using user data.
+we will create ec2 instance and ebs volume. we can format the volume and install few software using user data. 
+_There are two types of user data:_
+- shell scripts
+- cloud-init
 
-there are two types of user data:
-	1) shell scripts
-	2) cloud-init
+We have used cloud-init method for demo.
 
-in this demo, We have used cloud-init
+# IMP Note
+- If we are not setting **skip_destroy = true** during volume creation, we will face below error while destroying.(chk instance.tf for reference)
 
-If we are not setting skip_destroy = true during volume creation, we will face below error while destroying.(chk instance.tf)
-
+```python
 	Error: error detaching EC2 Internet Gateway (igw-XXXXXXXXXXXXXXX) from VPC (vpc-XXXXXXXXXXXXXXXXXXXXXXX): DependencyViolation: Network vpc-XXXXXXXXXXXXXX has some mapped public address(es). Please unmap those public address(es) before detaching the gateway.
 
 	Error: Error waiting for Volume (vol-0f729b77cd2c471a4) to detach from Instance (i-XXXXXXXXXXXXXXXXXX): unexpected state 'busy', wanted target 'detached'. last error: %!s(<nil>)
+```
