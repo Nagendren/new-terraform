@@ -1,11 +1,7 @@
-In this demo, we can see how to create Application load Balancer(ALB) using terraform.
+# Application Load Balancer
 
-Key points:
-
-1) ALB is Route/Path based load balancer
-
-2) We need to create Target Group (TG) and attach instance to TG.
-
-3) Then we need to create listner and attach the TG
-
-4) In listner, we can add rules and conditions for incoming traffic.
+# Key points:
+- ALB is Route/Path based load balancer
+- We need to create Target Group (TG) and attach instance to TG.
+- Then we need to create listner and attach the TG
+- In listner, we can add rules and conditions for incoming traffic.
