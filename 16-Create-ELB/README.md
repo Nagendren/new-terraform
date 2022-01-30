@@ -20,8 +20,8 @@
 > below are the changes added:
 - Creating elb.tf
 - we are adding below attributes to autoscaling.tf
-
-         > _health_check_type         = "ELB"_
-         > _load_balancers            = [aws_elb.my-elb.name]_
-         
+```python
+health_check_type         = "ELB"
+load_balancers            = [aws_elb.my-elb.name]
+```         
 - creating security group for ELB and allowing ec2 instance in SG. 
