@@ -4,5 +4,5 @@
 > 
 > but very important things that every engineer should understand.
 
-## _These advanced concepts helps to build robust, reliable, simple and complex terraform codes._
+## _These advanced concepts helps to build simple, complex, robust and reliable terraform codes._
 
