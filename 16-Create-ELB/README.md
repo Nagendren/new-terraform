@@ -14,12 +14,14 @@
 - We can attach ELB to AutoScaling group.
 
 > In this example we,
-- create ELB and attaching it to autoscaling group. 
+- create ELB and attach it to autoscaling group. 
 - We are using same code from demo 15 and making few changes
 
 > below are the changes added:
 - Creating elb.tf
 - we are adding below attributes to autoscaling.tf
+
          > _health_check_type         = "ELB"_
          > _load_balancers            = [aws_elb.my-elb.name]_
-- creating security group for ELB and allowing ec2 instance in SG 
+         
+- creating security group for ELB and allowing ec2 instance in SG. 
