@@ -15,10 +15,12 @@ Description: Applies the terraform changes
 command: terraform show 
 Description: prints tfstate file in readable format
 Example: terraform show | grep public_ip     # Will print only public ip
-``````python
+```
+```python
 command: terraform output
 Description: show the output value
-``````python
+```
+```python
 command: terraform taint <resource name>
 Description: when we don't have any changes to infra, and if we run terraform apply no action will be performed. terraform taint can be used at this point.
 Example: terraform taint aws_instance.example   #this will mark the instance as tainted and when we run terraform apply, new instance will be created.
@@ -34,7 +36,6 @@ Description: will check for diff between remote state and local state
 ```python
 command: terraform fmt 
 Description: will do the standard formating
-```
 ```
 ```python
 command: terraform get
