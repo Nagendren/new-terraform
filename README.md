@@ -26,6 +26,7 @@ NOTE: Never commit your ssh keys or aws secrets to git repo.
 - Install terraform
 - create terraform.tfvars and add your secrets
 - Run terraform init before every run
+- If you want to maintain provider version, commit your terraform lock file to repo
 
 ## Creator and Maintainer
 _Nagendren Rajmohan_
