@@ -7,4 +7,5 @@ This demo explains about provisioner file, remote-exec. Using provisioner we can
 
 _new servers are created in default Security Group (SG). we need to open ssh port in the SG for "remote-exec"_
 
-# Note: configuration management is not possible using this provisioner but ansible, chef and puppet can be integrated.
+# Note: 
+_configuration management is not possible using this provisioner but ansible, chef and puppet can be integrated._
