@@ -2,10 +2,10 @@
 
 This demo helps you to understand the creation of 
 - VPC
-- internet gateway
+- Internet gateway
 - NAT gateway 
 
-# Internet gateways 
+# Internet Gateway 
 - helps to connect the internet and it is associated with public subnets
 
 # NAt Gateway
