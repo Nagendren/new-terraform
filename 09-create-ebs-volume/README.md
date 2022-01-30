@@ -13,9 +13,9 @@ In this demo we create,
 - whitelist your ip in security-group.tf
 
 
-> after creating ebs volume, we need to format and mount the new volume before use
+_After creating ebs volume, we need to format and mount the new volume before use_
 
-> below listed commands are manual method for mounting volume, After ssh into new servers use below commands,
+> Below listed commands are manual method for mounting volume, After ssh into new servers use below commands,
 
 ```python
 mkfs.ext4 /dev/xvdh
