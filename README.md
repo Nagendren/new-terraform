@@ -1,11 +1,15 @@
 # Terraform
-##  _codes in this repo are compatible with Terraform v1.1.4_
+##  _codes in this repo are compatible with Terraform version >=0.12_
 
 Terraform is an open-source infrastructure as code software tool. 
 
 we have very good documentation in "https://www.terraform.io/docs". Examples used in this repo are referred from the abve url.
 
-This repo covers terraform basic and aws-terraform with examples. Readme files inside the folders has enough informations.
+This repo covers,
+
+- terraform basic
+- terraform Advance
+- terraform with AWS
 
 ```sh
 NOTE: Never commit your ssh keys or aws secrets to git repo.
@@ -18,6 +22,7 @@ NOTE: Never commit your ssh keys or aws secrets to git repo.
 
 
 ## Prerequisite
+- You should have basic understanding of terraform
 - Install terraform
 - create terraform.tfvars and add your secrets
 - Run terraform init before every run
