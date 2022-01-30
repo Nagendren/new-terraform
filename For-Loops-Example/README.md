@@ -39,7 +39,7 @@ terrform console
  0,
  3,
 ]
-> {for k, v in vars.map1: v => k}    #print th output in map and switch the key value pair
+> {for k, v in vars.map1: v => k}    #print the output in map and switch the key value pair
 {
  "0" = "mango"
  "10" = "banana"
