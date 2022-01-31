@@ -23,4 +23,7 @@ Example:
 ```
 
 # NOTE: 
-Before using backend, S3 bucket need to be created and connection need be established between your local and aws (use aws configure)
+- Before using s3 backend, S3 bucket need to be created.
+- Connection need be established between your local and aws (use aws configure)
+- DynamoDB table need to be created.
+- The table must have a partition key named **LockID** with type of **String**.
