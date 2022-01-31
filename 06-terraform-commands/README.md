@@ -38,6 +38,10 @@ command: terraform fmt
 Description: will do the standard formating
 ```
 ```python
+command: terraform validate 
+Description: validates the configuration files in a directory
+```
+```python
 command: terraform get
 Description: used to download the modules
 ```
