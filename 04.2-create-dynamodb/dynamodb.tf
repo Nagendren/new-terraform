@@ -1,5 +1,5 @@
-resource "aws_dynamodb_table" "terraform-lock" {
-    name           = "terraform_state"
+resource "aws_dynamodb_table" "dynamodb-table" {
+    name           = "nr-terraform-state-table"
     read_capacity  = 5
     write_capacity = 5
     hash_key       = "LockID"
@@ -11,4 +11,3 @@ resource "aws_dynamodb_table" "terraform-lock" {
         "Name" = "DynamoDB Terraform State Lock Table"
     }
 }
-#The primary key to be used to lock the state in dynamoDB must be called LockID and must be a “string” type (S).
