@@ -1,11 +1,18 @@
 variable "AWS_REGION" {
-  default = "ap-south-1"
+  default = "us-east-1"
 }
 
 variable "AMIS" {
   type = map(string)
   default = {
-    ap-south-1 = "ami-0f2e255ec956ade7f"
-    ap-east-1  = "ami-038ff3475cbb62351"
+    us-east-1 = "ami-0b0ea68c435eb488d"
+    us-west-1 = "ami-0454207e5367abf01"
   }
+}
+
+variable "vpc_name" {
+  default = "your vpc name"
+}
+variable "subnet1_name" {
+  default = "your subnet name"
 }

@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "your-bucket-name"
-    key    = "your-file-name"
-    dynamodb_table = "table-name"
+    bucket         = "nr-terraform-state-backend"
+    key            = "deploy"
+    dynamodb_table = "nr-terraform-state-table"
   }
 }
